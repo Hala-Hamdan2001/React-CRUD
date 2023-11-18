@@ -139,7 +139,7 @@ export default function Index() {
           </tr>
         </React.Fragment>
     )
-    ):<tr><h2>no user data</h2></tr>}
+    ):<tr><td>no user data</td></tr>}
   </tbody>
 </table>
     </div>

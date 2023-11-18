@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import {toast} from 'react-toastify'
-import Input from '../../shared/input';
+import Input from '../../shared/Input';
 import { validationData } from '../../validation/Uservalidation';
 import Loader from '../Loader';
 export default function Create() {

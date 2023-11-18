@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useState,useEffect} from 'react'
 import { useNavigate } from 'react-router-dom';
 import {toast} from 'react-toastify'
-import Input from '../../shared/input';
+import Input from '../../shared/Input';
 import { validationData } from '../../validation/Uservalidation';
 import Loader from '../Loader';
 import { useParams } from 'react-router-dom';
@@ -48,16 +48,16 @@ export default function Edit() {
             }
         }
         catch(error){
-                setErrorBack(error.response.data.message);
-                setErrors([]);
-                setLoader(false);
+           setErrorBack(error.response.data.message);
+           setErrors([]);
+           setLoader(false);
         }
         } 
        }
        if(loader){
         return(
           <div className='container'>
-               <Loader/>
+            <Loader/>
           </div>
         )
        }
